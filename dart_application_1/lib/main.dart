@@ -8,19 +8,22 @@ void main(){
      print(Author.id);   
 
 
-  Author author3 = Author( "Saleh", "Saleh@gmail.com");
+  Author author3 = Author( "Mohammed", "Mohammed@gmail.com");
      print(Author.id);   
 
-
+  Author author4 = Author( "Saeed", "Saeed@gmail.com");
+     print(Author.id);   
 
   Book book1 = Book(name: "Dart Programming", ISBN: "123", edition: 1, author: author1);
   Book book2 = Book(name: "Flutter Development", ISBN: "124", edition: 2, author: author2); 
   Book book3 = Book(name: "Dart Programming", ISBN: "125", edition: 3, author: author3);
+  Book book4 = Book(name: "Mobile App Design", ISBN: "126", edition: 1, author: author4);
 
   Customer customer = Customer("Zaid", "Zaid@gmail.com", []);
   customer.AddBook(book1);
   customer.AddBook(book2);
   customer.AddBook(book3);
+  customer.AddBook(book4);
   customer.printInformation();
 
 
